@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/app.controller.js"></script>
+    <title>Measurements</title>
+</head>
+
+<body ng-controller="myAppController">
+
+        <div ng-repeat="measurement in measurements">
+            {{measurement.name}} {{measurement.metricSource}} {{measurement.metricType}}
+        </div>
+
+</body>
+</html>
